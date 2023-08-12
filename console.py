@@ -12,7 +12,13 @@ class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
 
     def do_quit(self, arg):
-        """ A handler to quit the interpreter """
+        """
+        A handler to quit the interpreter
+        
+        Parameters
+        arg : string
+            The argument passed to this command
+        """
         return (True)
 
     def help_quit(self):
@@ -22,7 +28,13 @@ class HBNBCommand(cmd.Cmd):
         self.exit_helper_text()
 
     def do_EOF(self, arg):
-        """ A handler to Ctrl + D signal """
+        """
+        A handler to Ctrl + D signal
+
+        Parameters
+        arg : string
+            The argument passed to this command
+        """
         return (True)
 
     def help_EOF(self):
